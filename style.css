@@ -1,0 +1,286 @@
+h1{
+    font-style: italic;
+    color: rgb(6, 6, 6);
+    margin-bottom: -15px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+body{
+    text-align: center;
+    align-items: center;
+}
+.Navbar{
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    display: flex;
+    font-size: 17px;
+    /*top: 2vh;*/
+    border-radius: 20px;
+    box-shadow: -2px 7px 6px #D0BFE0;
+    box-sizing: border-box;
+    left: calc((100vw-65vw)/2);
+    
+    
+}
+.Navbar ul{
+   
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 65px 0 65px;
+}
+.Navbar ul li a{
+    text-align: center;
+    display: flex;
+    padding: 0px 15px 0px 15px;
+    white-space: nowrap;
+    border-radius: 15%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: overline;
+}
+
+body{
+    background: linear-gradient(to bottom,#fae7f9,#FADEF8, #efcaf0,#e6c7ef,#f7b6f2)
+}
+
+.Home { 
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajusta la altura según sea necesario */
+    padding: 0 10px 0 10px;
+}
+.Home h1{
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
+    
+
+}
+.contenido h1{ 
+    padding: 20px;
+    size: 100px;
+    animation-name: miAnimacion;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes miAnimacion {
+from {color: red;}
+to {color: rgb(229, 34, 216);}
+}
+
+
+.Descripcion{
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+.contenido {
+    text-align: center; /* Centra el contenido de texto */
+}
+
+.foto {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block; /* Hace que el contenedor sea un bloque en línea */
+}
+
+.foto img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 50%;
+    border: 5px solid #E0A2A2
+}
+
+.HabilidadesDuras{
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 15%;
+    box-shadow: -2px 1px 1px 2px #E6A2C8;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,#fbe5f9,#feebfd, #FADEF8);
+    margin-bottom: 0px;
+    height: 350px;
+}
+
+/*contenido de las secciones de habilidades duras */
+.columna{
+    width: 100vw;
+    height: fit-content;
+    text-align: justify;
+    flex-direction: column;
+    display: flex;
+}
+.HabilidadesDuras .fila{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0px 0px 20px;
+    margin-top: 20px;
+
+}
+.HabilidadesDuras .fila .columna{
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.HabilidadesBlandas{
+    
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 15%;
+    box-shadow: -2px 1px 1px 2px #E6A2C8;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,#fbe5f9,#feebfd, #FADEF8);
+    margin-bottom: 0px;
+    height: 350px;
+}
+/*contenido de las secciones de habilidades Blandas */
+.columna{
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+.HabilidadesBlandas .fila{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+
+}
+.HabilidadesBlandas .fila .columna{
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.Portafolio{
+    background-color: rgb(253, 240, 255);
+    text-align: center;
+}
+.barra{
+    height: fit-content;
+    width: 40vw;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.sliderphoto{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.sliderphoto ul{
+    padding: 0px;
+    display: flex;
+    width: 300%;
+    animation: cambio 17s infinite alternate-reverse;
+}
+.sliderphoto li{
+    width: 100%;
+    margin: 0px;
+    list-style: none;
+}
+
+.sliderphoto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    33%{margin-left: 0;}
+    
+    33%{margin-left: -100%;}
+    66%{margin-left: -100%;}
+
+    66%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+.Contacto{
+    margin-top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none; text-align: center;
+    
+}
+
+
+.Contacto ul li{
+    font-size: 10px;
+    text-align: center;
+    list-style: none;
+    border-radius:100%;
+    box-shadow: -2px 1px 2px #ff74f8;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+
+
+
+    .footer{
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0px;
+       
+    }
+    .footer .iconos{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+    .footer .iconos a svg{
+        width: 35px;
+        opacity: .8;
+    }
+
+/*COSAS PARA PERSONALIZAR TEXTOS
+.sobremi .fila .columna h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;  
+    font-weight: bold; /* Para aplicar negrita 
+    font-size: 24px; /* Tamaño de la fuente 
+    color: #333; /* Color del texto 
+    line-height: 1.5; /* Altura de línea (espaciado entre líneas) 
+    letter-spacing: 1px; /* Espaciado entre letras 
+    text-transform: uppercase; /* Transformación de texto a mayúsculas 
+    Otras propiedades opcionales que puedes ajustar según tus preferencias 
+     */
